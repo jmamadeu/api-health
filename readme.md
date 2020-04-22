@@ -13,8 +13,8 @@
 
 1. Faça um clone desse repositório;
 2. Entre na pasta `cd api-health`;
-3. Rode `yarn` dentro da pasta `backend` para instalar as dependências ;
-4. Na pasta `backend` execute `yarn dev:server` pra iniciar o servidor de desenvolvimento;
+3. Rode `yarn` para instalar as dependências ;
+4. Execute `yarn dev:server` pra iniciar o servidor de desenvolvimento;
 
 ## 📝 Licença
 
