@@ -2,7 +2,7 @@
   API-Health
 </h3>
 
-<p align="center">A.P.I. Restfull para software de saúde!(api restfull) e  #Reactjs.</p>
+<p align="center">A.P.I. Restfull para software de saúde!(api restfull).</p>
  
 ## ✋🏻 Pré-requisitos
 
