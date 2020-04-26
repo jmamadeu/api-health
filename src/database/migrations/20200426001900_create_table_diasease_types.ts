@@ -4,8 +4,9 @@ export async function up(knex: Knex): Promise<any> {
   return knex.schema.createTable('tb_diasease_types', (table) => {
     table.uuid('dty_id').primary();
     table.string('dty_name').notNullable().unique();
-    table.text('description').nullable();
-    table.text('notes').nullable();
+    table.text('dty_description').nullable();
+    table.text('dty_notes').nullable();
+    table.timestamps(true, true);
   });
 }
 

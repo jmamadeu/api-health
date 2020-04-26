@@ -4,6 +4,7 @@ import path from 'path';
 module.exports = {
   development: {
     client: 'sqlite3',
+    useNullAsDefault: true,
     connection: {
       filename: path.resolve(
         __dirname,
