@@ -6,7 +6,6 @@ export async function up(knex: Knex): Promise<any> {
     table.string('dty_name').notNullable().unique();
     table.text('dty_description').nullable();
     table.text('dty_notes').nullable();
-    table.timestamps(true, true);
   });
 }
 
