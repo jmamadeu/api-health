@@ -9,10 +9,13 @@
 
 ## Instalação
 
-Instale as dependências que a API precisa:
+Após clonar o repositório, instale as dependências executando os seguintes comandos:
 
 ```sh
-  $ cd api-health yarn install # ou npm install
+  $ cd api-health
+```
+```sh
+ $ yarn install # ou npm install
 ```
 
 ## Executando a aplicação
@@ -20,7 +23,7 @@ Instale as dependências que a API precisa:
 Acesse a pasta do projecto e execute o seguinte comando:
 
 ```sh
-  $ yarn dev:server # ou npm run dev
+  $ yarn dev:server # ou npm run dev:server
 ```
 Para rodar os testes, digite o seguinte comando no terminal:
 
