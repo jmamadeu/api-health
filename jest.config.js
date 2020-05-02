@@ -6,7 +6,7 @@ module.exports = {
   // automock: false,
 
   // Stop running tests after `n` failures
-  bail: true,
+  //bail: 0,
 
   // Respect "browser" field in package.json when resolving modules
   // browser: false,
@@ -61,7 +61,7 @@ module.exports = {
   // globals: {},
 
   // The maximum amount of workers used to run your tests. Can be specified as % or a number. E.g. maxWorkers: 10% will use 10% of your CPU amount + 1 as the maximum worker number. maxWorkers: 2 will use a maximum of 2 workers.
-  // maxWorkers: "50%",
+  maxWorkers: "100%",
 
   // An array of directory names to be searched recursively up from the requiring module's location
   // moduleDirectories: [
@@ -91,7 +91,7 @@ module.exports = {
   // notifyMode: "failure-change",
 
   // A preset that is used as a base for Jest's configuration
-  // preset: undefined,
+  preset: 'ts-jest',
 
   // Run tests from one or more projects
   // projects: undefined,
@@ -161,7 +161,7 @@ module.exports = {
   // testURL: "http://localhost",
 
   // Setting this value to "fake" allows the use of fake timers for functions such as "setTimeout"
-  // timers: "real",
+  timers: "fake",
 
   // A map from regular expressions to paths to transformers
   // transform: undefined,
