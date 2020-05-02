@@ -1,17 +1,11 @@
 import express from 'express';
-import { v4 as uuid } from 'uuid';
+import cors from 'cors'
+
+import routes from './app/routes/index.routes'
 
 const app = express();
-
-app.get('/diseases', (req, res) => {
-  res.json([
-    {
-      id: uuid(),
-      name: 'Corona Vírus',
-      image_url: '',
-      description: 'O vírus é mau.',
-    },
-  ]);
-});
+app.use(cors())
+app.use(express.json())
+app.use(routes)
 
 export default app;
