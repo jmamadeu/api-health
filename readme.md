@@ -9,11 +9,16 @@
 
 ## Instalação
 
-Após clonar o repositório, instale as dependências executando os seguintes comandos:
+Clone o repositório, e instale as dependências executando os seguintes comandos:
+
+```sh
+  $ git clone https://github.com/jmamadeu/api-health.git
+```
 
 ```sh
   $ cd api-health
 ```
+
 ```sh
  $ yarn install # ou npm install
 ```
@@ -25,6 +30,7 @@ Acesse a pasta do projecto e execute o seguinte comando:
 ```sh
   $ yarn dev:server # ou npm run dev:server
 ```
+
 Para rodar os testes, digite o seguinte comando no terminal:
 
 ```sh
