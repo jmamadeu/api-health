@@ -1,7 +1,7 @@
 // Update with your config settings.
 import path from 'path';
 
-export default {
+module.exports = {
   development: {
     client: 'sqlite3',
     useNullAsDefault: true,
@@ -11,7 +11,7 @@ export default {
         'src',
         'database',
         'data',
-        'db_health_test.sqlite'
+        'db_health.sqlite'
       ),
     },
     migrations: {
