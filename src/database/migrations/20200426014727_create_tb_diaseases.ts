@@ -9,6 +9,8 @@ export async function up(knex: Knex): Promise<any> {
     table.string('dia_current_status').nullable();
     table.string('dia_code').nullable();
     table.string('dia_notes').nullable();
+    table.uuid('dia_dty_id').notNullable();
+    table.foreign('dia_dty_id').references('tb_diasease_types.dty_id');
   });
 }
 
