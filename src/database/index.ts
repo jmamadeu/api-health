@@ -1,11 +1,19 @@
-import knex from 'knex';
-import configDatabase from '../../knexfile';
+import 'reflect-metadata';
+import { createConnection, getConnectionOptions } from 'typeorm';
 
-const config =
-  process.env.NODE_ENV === 'test'
-    ? configDatabase.test
-    : configDatabase.development;
+const configDatabase = getConnectionOptions('default');
 
-const dbConnection = knex(config);
+export default async function connection() {
+  return await createConnection()
+    .then(() => console.log('database connected'))
+    .catch(() => console.log('database error'));
+}
 
-export default dbConnection;
+// const config =
+//   process.env.NODE_ENV === 'test'
+//     ? configDatabase.test
+//     : configDatabase.development;
+
+// const dbConnection = knex(config);
+
+// export default dbConnection;
